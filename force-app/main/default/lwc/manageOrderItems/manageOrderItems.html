@@ -1,0 +1,12 @@
+<template>
+    <!--TODO: Update buttons view-->
+    <lightning-button label="Remove" variant="brand" title="Delete one or more Order Items" onclick={deleteItems}></lightning-button>
+    <lightning-button label="Save" variant="brand" title="Save one or more Order Items" onclick={saveItems}></lightning-button>
+        <div data-id="orderItemTable" style="height: 300px;">
+            <lightning-datatable
+                key-field="id"
+                data={orderItemsData}
+                columns={columnInfos}>
+            </lightning-datatable>
+        </div>
+</template>
